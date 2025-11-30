@@ -1,7 +1,7 @@
 /* import "../styles/ProjectsGrid.css"; */
 
 /* Wrapper section */
-/* GRID WRAPPER ------------------------------------- */
+/* GRID WRAPPER  */
 .projects-grid {
   display: flex;
   flex-direction: column;
@@ -10,7 +10,7 @@
   margin-top: 20px;
 }
 
-/* Each project row --------------------------------- */
+/* Each project row */
 .project-row {
     display: flex;
     gap: 24px;
@@ -24,7 +24,7 @@
     align-items: flex-start;
 }
 
-/* space below each project card */
+  /* space below each project card */
 .projects-list > * {
   margin-bottom: 48px;   
   padding-bottom: 8px;

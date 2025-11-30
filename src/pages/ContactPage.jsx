@@ -4,7 +4,7 @@ import ProfileCard from "../components/ProfileCard";
 import "../styles/ContactPage.css";
 
 export default function ContactPage() {
-  const main = contacts[0];   // your main contact info
+  const main = contacts[0]; 
 
   return (
     <div className="contact-card glass">
