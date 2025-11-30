@@ -3,6 +3,9 @@
 
 ##How To Use
 Clone or download the repository,
+``bash
+git clone https://github.com/piotrowskaannamilena-blip/react-my-first-ever-portfolio-which-is-beautiful.git
+
 Install dependencies:
 react-icons is required for social and tech icons:
 
