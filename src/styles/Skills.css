@@ -1,0 +1,21 @@
+/* import "../styles/Skills.css"; */
+
+.skills-page { padding: 12px 0; }
+.skills-grid {
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+@media (max-width: 920px) { .skills-grid { grid-template-columns: repeat(2,1fr); } }
+
+.skill-card {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:12px;
+  border-radius:10px;
+  background: rgba(255,255,255,0.03);
+}
+
+.skill-card svg { width:28px; height:28px; color:var(--accent-1); }
+.skill-card span { font-weight:600; color:#fff; }

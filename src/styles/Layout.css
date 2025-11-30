@@ -1,0 +1,90 @@
+/* import "../styles/Layout.css"; */
+
+/* ROOT WRAPPER */
+.layout-root {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+/* Dot background */
+.dot-grid {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* Light mode dots */
+.dot-grid.light .dot {
+  background-color: #aa27be98;
+}
+
+/* Dark mode dots */
+.dot-grid.dark .dot {
+  background-color: rgba(74, 12, 73, 0.68);
+}
+
+.layout-content,
+footer {
+  position: relative;
+  z-index: 2;
+}
+
+/* The CENTERING WRAPPER */
+.page-wrapper {
+  width: 100%;
+  max-width: 1200px;     
+  margin: 0 auto;
+  margin-top: 200px;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Main content card */
+.layout-content {
+    width: 100%;
+    max-width: 1200px;     
+    margin: 280px auto 0; 
+    padding: 20px;
+
+    background: rgba(20,20,20,0.35);
+    border: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(14px);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+
+    position: relative;
+    z-index: 2;
+    flex-grow: 1; 
+
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .layout-content {
+    margin-top: 500px;
+    margin-right: 2px;
+    padding: 18px;
+  }
+    .page-wrapper {
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .layout-content {
+    margin-right: 40px;  
+
+  }
+  .page-wrapper {
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+}

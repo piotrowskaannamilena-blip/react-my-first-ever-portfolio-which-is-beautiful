@@ -1,0 +1,44 @@
+/* import "../styles/ProjectsGrid.css"; */
+
+/* Wrapper section */
+/* GRID WRAPPER ------------------------------------- */
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Each project row --------------------------------- */
+.project-row {
+    display: flex;
+    gap: 24px;
+
+    width: 100%;             
+    max-width: 1200px;        
+    margin: 0 auto;           
+    padding: 10px;
+    border-radius: 10px;
+    flex-wrap: wrap;          
+    align-items: flex-start;
+}
+
+/* space below each project card */
+.projects-list > * {
+  margin-bottom: 48px;   
+  padding-bottom: 8px;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+
+.projects-list > *:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px var(--accent-1);
+}
+/* Stack on mobile */
+@media (max-width: 850px) {
+  .project-row {
+    flex-direction: column;
+  }
+}

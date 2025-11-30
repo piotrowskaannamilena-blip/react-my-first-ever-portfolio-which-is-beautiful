@@ -1,0 +1,99 @@
+:root {
+  --radius: 16px;
+
+  --glass-bg: rgba(255,255,255,0.08);
+  --glass-border: rgba(255,255,255,0.15);
+  --glass-shadow: 0 8px 32px rgba(0,0,0,0.35);
+
+  --text-main: #fff;
+  --text-subtle: rgba(255,255,255,0.75);
+
+  --accent-1: #ff70a6;
+  --accent-2: #ff9770;
+  --accent-3: #ffd670;
+  --text-black: rgb(0, 0, 0);
+  --bradius: 20px 20px 0 0px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* background: #0f0f0f; */
+  background: transparent;
+  font-family: "Inter", sans-serif;
+  color: var(--text-main);
+}
+
+body .dark {
+  background: rgba(0, 0, 0, 0.8); 
+}
+
+body .light{
+  color: black;
+}
+
+/* Added global centering wrapper */
+.page-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* glass utility */
+.glass {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(16px) saturate(140%);
+  border-radius: var(--radius);
+  box-shadow: var(--glass-shadow);
+  padding: 20px;
+}
+
+/* Typography */
+.gradient-heading {
+  font-size: 2.3rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, var(--accent-1), var(--accent-3), var(--accent-2) );
+  color: var(--text-black);
+  padding: 5px;
+  border-radius: var(--bradius);
+}
+
+body .light .gradient-heading {
+  background: linear-gradient(90deg, black, grey, white );
+  color: var(--text-main);
+
+}
+body .light .nav-item {
+  color: black;
+}
+
+.dark .theme-toggle-btn {
+  color: yellow;
+}
+
+.light .theme-toggle-btn {
+  color: black
+}
+
+.light p {
+  color: black;
+}
+
+.subtitle {
+  color: var(--text-subtle);
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  text-align: center;
+  z-index: 2;
+  border-radius: var(--bradius);
+}
