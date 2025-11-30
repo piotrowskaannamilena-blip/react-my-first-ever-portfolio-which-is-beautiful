@@ -41,8 +41,8 @@ export default function ProjectCard({ project }) {
               })}
             </div>
             <div className="project-links">
-              {githubUrl && <a className="link-btn" href={githubUrl}>Code</a>}
-              {liveUrl && <a className="link-btn" href={liveUrl}>Live</a>}
+              {githubUrl && <a className="link-btn" target="_blank" rel="noopener noreferrer" href={githubUrl}>Code</a>}
+              {liveUrl && <a className="link-btn" target="_blank" rel="noopener noreferrer" href={liveUrl}>Live</a>}
             </div>
           </div>
 
