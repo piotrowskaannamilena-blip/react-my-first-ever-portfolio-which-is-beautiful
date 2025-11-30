@@ -2,6 +2,7 @@ import React from "react";
 import contacts from "../data/contacts.json";
 import "../styles/NavBar.css";
 import Display from "./Display";
+import Logo from "/images/lania_logo.jpg";
 
 import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
 
@@ -20,7 +21,7 @@ export const NavBar = ({ selectedPage = "home", onSetPage = ()=>{} }) => {
       <div className="nav-inner">
         {/* Left logo - link to home */}
         <div className="nav-left" onClick={() => onSetPage("home")}>
-          <img src="/src/assets/images/lania_logo.jpg" alt="logo" className="nav-logo"/>
+          <img src= {Logo} alt="logo" className="nav-logo"/>
         </div>
 
         {/* Center menu links */}
