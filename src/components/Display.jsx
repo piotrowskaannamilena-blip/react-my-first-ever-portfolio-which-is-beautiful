@@ -8,7 +8,7 @@ function Display() {
 
   return (
     <div style={{ backgroundColor: themeColor, padding: '0px', color: '#fff', textAlign: 'center' }}>
-      <p>Theme: {themeColor}</p>
+      <p> {themeColor}</p>
     </div>
   );
 }

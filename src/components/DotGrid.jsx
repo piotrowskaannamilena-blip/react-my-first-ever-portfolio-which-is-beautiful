@@ -9,7 +9,9 @@ function hexToRgb(hex) {
   return { r: parseInt(m[1], 16), g: parseInt(m[2], 16), b: parseInt(m[3], 16) };
 }
 
-const DotGrid = ({ dotSize = 3, gap = 10, baseColor = "#d81df5d6", activeColor = "#5227FF", proximity = 150 }) => {
+const DotGrid = ({ dotSize = 2, gap = 6, baseColor = "#ffd670" , activeColor = "#bb00fff1", proximity = 78 }) => {
+  // "#ffd670" "#bb00fff1"
+  
   const wrapperRef = useRef(null);
   const canvasRef = useRef(null);
   const dotsRef = useRef([]);
