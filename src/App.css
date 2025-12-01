@@ -8,18 +8,26 @@
   --text-main: #fff;
   --text-subtle: rgba(255,255,255,0.75);
 
+  --background-subtle: rgba(255,255,255,0.03);
+  --bground-linear:  linear-gradient(90deg, rgba(255,112,166,0.12), rgba(255,151,112,0.08)); 
+  
   --accent-1: #ff70a6;
   --accent-2: #ff9770;
   --accent-3: #ffd670;
+  --accent-white: rgb(217, 213, 213);
+
+  --gradient-monochrome: linear-gradient(90deg, black, grey, white);
+
   --text-black: rgb(0, 0, 0);
+  /* border radius */
   --bradius: 20px 20px 0 0px;
 }
 
 body {
   margin: 0;
   padding: 0;
-  /* background: #0f0f0f; */
-  background: transparent;
+  background: rgba(0, 0, 0, 0.416);
+  /* background: transparent; */
   font-family: "Inter", sans-serif;
   color: var(--text-main);
 }
@@ -56,8 +64,9 @@ body .light{
   font-weight: 800;
   background: linear-gradient(90deg, var(--accent-1), var(--accent-3), var(--accent-2) );
   color: var(--text-black);
-  padding: 5px;
+  padding: 10px;
   border-radius: var(--bradius);
+  padding: 10px;
 }
 
 body .light .gradient-heading {
@@ -81,12 +90,19 @@ body .light .nav-item {
   color: black;
 }
 
+.light .link-btn {
+
+  background: var( --glass-bg);
+
+}
+
 .subtitle {
   color: var(--text-subtle);
   font-size: 1.1rem;
   margin-bottom: 12px;
   
 }
+
 
 /* Footer */
 footer {
@@ -97,3 +113,4 @@ footer {
   z-index: 2;
   border-radius: var(--bradius);
 }
+

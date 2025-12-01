@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
 import ContactPage from "./pages/ContactPage";
+import SkillsPage from "./pages/SkillsPage";
+
 import "./App.css";
 
 function App() {
@@ -11,7 +13,7 @@ function App() {
     <Layout selectedPage={page} onSetPage={setPage}>
       {page === "home" && <HomePage />}
       {page === "contact" && <ContactPage />}
-
+      {page === "skills" && <SkillsPage />}
     </Layout>
   );
 }
