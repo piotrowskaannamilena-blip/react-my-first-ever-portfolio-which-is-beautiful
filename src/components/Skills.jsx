@@ -2,17 +2,38 @@ import React from "react";
 import "../styles/Skills.css";
 import { techIcons } from "../data/projects";
 
-export default function Skills({ techs = [] }) {
+export default function Skills({ techs = [], selectedTech, onSelectTech }) {
+
+
   return (
-    <section>
-      <h1 className="gradient-heading">Skills</h1>
+    <section id="skills">
+      <h1 className="gradient-heading">My skills</h1>
+
       <div className="skills-grid">
         {techs.map(t => {
           const Icon = techIcons[t];
+          const isActive = selectedTech === t;
+
+          // click same tech again clears
+          //  const handleClick = () => {
+          //   onSelectTech(isActive ? "" : t);
+          // };
+
+
           return (
-            <div className="skill-card" key={t}>
-              {Icon && <Icon />}
-              <span>{t}</span>
+            <div
+              key={t}
+              className={`skill-card ${isActive ? "active" : ""}`}
+              onClick={() => onSelectTech(isActive ? "" : t)}
+              role="button"
+
+              // style={{cursor : "pointer"}}
+
+            >
+            
+            {Icon && <Icon className="skill-icon" />}
+            <span>{t}</span>
+
             </div>
           );
         })}

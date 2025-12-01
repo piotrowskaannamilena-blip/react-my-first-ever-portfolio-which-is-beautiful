@@ -35,14 +35,25 @@
 .project-title {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #ff70a6;
+  /* color: #ff70a6; */
+  color: var(--accent-white);
   margin-bottom: 10px;
+  padding: 6px;
+  align-items: center;
 }
 
+
+
 .project-desc {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: rgba(255,255,255,0.8);
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.project-desc:hover {
+  color: white;
+
 }
 
 /* Technologies*/
@@ -58,7 +69,7 @@
   align-items: center;
   gap: 6px;
   padding: 6px 12px;
-  background: rgba(255,255,255,0.08);
+  background: rgba(74, 68, 68, 0.08);
   border-radius: 12px;
   border: 1px solid rgba(255,255,255,0.12);
 }
@@ -85,6 +96,11 @@
 }
 .link-btn:hover {
   opacity: 0.75;
+}
+
+.link-btn .light {
+  background: var(--gradient-monochrome);
+
 }
 
 /* Mobile responsive */

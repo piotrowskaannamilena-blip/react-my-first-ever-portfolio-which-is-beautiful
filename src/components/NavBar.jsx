@@ -12,7 +12,7 @@ import { FaSun, FaMoon } from "react-icons/fa";
 
 export const NavBar = ({ selectedPage = "home", onSetPage = ()=>{} }) => {
   const main = contacts[0] || {};
-  const pages = ["home","contact"];
+  const pages = ["home", "skills", "contact"];
 
   const { theme, toggleTheme } = useTheme();  
 

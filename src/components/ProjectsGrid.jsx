@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import "../styles/ProjectsGrid.css";
+
 import TextPressure from './TextPressure';
 
 export default function ProjectsGrid({ projects }) {

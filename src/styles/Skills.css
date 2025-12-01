@@ -1,21 +1,96 @@
 /* import "../styles/Skills.css"; */
 
-.skills-page { padding: 12px 0; }
+.skills-page { 
+  padding: 12px 0; 
+}
+
 .skills-grid {
   display:grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 12px;
 }
-@media (max-width: 920px) { .skills-grid { grid-template-columns: repeat(2,1fr); } }
+
 
 .skill-card {
   display:flex;
   align-items:center;
-  gap:12px;
-  padding:12px;
-  border-radius:10px;
-  background: rgba(255,255,255,0.03);
+  gap: 12px;
+  padding: 10px;
+  border-radius: var(--bradius);
+  background: var(--background-subtle);
+  margin-bottom: 30px;
+
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
 }
 
-.skill-card svg { width:28px; height:28px; color:var(--accent-1); }
-.skill-card span { font-weight:600; color:#fff; }
+
+.skill-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+/* Icon inside skill card */
+.skill-icon {
+  width: 22px; 
+  height: 22px; 
+  color: var(--bground-linear); 
+}
+
+/* 
+.skill-card svg { 
+  width:28px; 
+  height:28px; 
+  color:var(--accent-white); 
+} */
+
+
+/* selected icon active */
+.skill-card.active {
+  /* background: var(--accent-white); */
+  border: 2px solid var(--accent-1);
+  transform: scale(1.03);
+}
+
+.skill-card.active .skill-icon {
+  color: var(--accent-1);
+  color: var(--text-black);
+
+}
+
+/* Text color of icon */
+.skill-card.active span {
+  color: var(--accent-1);
+}
+/* Reset button */
+
+.reset-btn {
+  margin: 20px auto;
+  display: block;
+  /* display: inline-block; */
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: var(--accent-1);
+  color: black;
+  font-weight: bold;
+  border: none;
+  transition: 0.2s ease;
+}
+
+.reset-btn:hover {
+  transform: scale(1.05);
+  background: white;
+}
+
+
+
+@media (max-width: 920px) { 
+  .skills-grid { 
+    grid-template-columns: repeat(2,1fr); 
+  } 
+
+}
+@media (max-width: 520px) {
+  .skills-grid { grid-template-columns: 1fr; }
+}

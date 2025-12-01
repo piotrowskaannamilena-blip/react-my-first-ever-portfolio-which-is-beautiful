@@ -15,23 +15,24 @@ export default function Layout({ children, selectedPage, onSetPage }) {
       
       {/* dotgrid background from reactbits  */}
       <DotGrid className="dot-background" />
-        <div className="layout-wrapper"></div>
+      
+      <div className="layout-wrapper">
 
-    {/* Navbar  */}
-    <NavBar selectedPage={selectedPage} onSetPage={onSetPage} />
+      {/* Navbar  */}
+      <NavBar selectedPage={selectedPage} onSetPage={onSetPage} />
 
 
       {/* Centered wrapper */}
-      <div className="page-wrapper">
+        <div className="page-wrapper">
 
-        <div className="layout-content">
-          {children}
+          <div className="layout-content">
+            {children}
+          </div>
+
+            {/* Footer  */}
+            <Footer />
         </div>
-
-          {/* Footer  */}
-          <Footer />
       </div>
-
     </div>
   );
 }

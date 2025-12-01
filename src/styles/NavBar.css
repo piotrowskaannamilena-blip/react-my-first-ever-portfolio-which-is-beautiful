@@ -122,8 +122,9 @@
 @media (max-width: 900px) {
 
   .top-nav {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .nav-logo {

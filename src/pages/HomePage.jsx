@@ -8,20 +8,21 @@ const HomePage = () => {
     <>
 
       <div>
-        <h2 className="gradient-heading">Welcome to my portfolio</h2>
-        <p className="subtitle">I’m Anna Piotrowska. I'm working with front-end framework React.js to build this portfolio.</p>
-        <p>I am learning Full Stack Web Developer, I am working with:</p>
+        <h2 className="gradient-heading">Portfolio</h2>
+        <p className="subtitle">Hi, I’m Anna Piotrowska. I'm working with front-end framework React.js to build this portfolio.</p>
+        <p>I am Full Stack Web Developer. </p>
  
         <p className="subtitle">
-          Full-Stack Developer – Problem Solver
+          Full-Stack Developer – Problem Solver 
         </p>
       </div>
 
       <div className="main-card glass">
-        <h1 className="gradient-heading">This is project page</h1>
+        <h1 className="gradient-heading">My projects:</h1>
         <p>
           A collection of my best work, spanning various technologies and domains.
         </p>
+        
         {/* Projects */}
       <ProjectsGrid projects={projects} />
 
