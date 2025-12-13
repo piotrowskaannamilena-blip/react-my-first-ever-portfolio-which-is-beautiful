@@ -11,6 +11,8 @@
   --background-subtle: rgba(255,255,255,0.03);
   --bground-linear:  linear-gradient(90deg, rgba(255,112,166,0.12), rgba(255,151,112,0.08)); 
   
+  --dark-background: rgba(0, 0, 0, 0.99);
+
   --accent-1: #ff70a6;
   --accent-2: #ff9770;
   --accent-3: #ffd670;
@@ -26,14 +28,16 @@
 body {
   margin: 0;
   padding: 0;
-  background: rgba(0, 0, 0, 0.416);
-  /* background: transparent; */
-  font-family: "Inter", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   color: var(--text-main);
 }
 
 body .dark {
-  background: rgba(0, 0, 0, 0.8); 
+  background: var(--dark-background);
 }
 
 body .light{
@@ -69,12 +73,12 @@ body .light{
   padding: 10px;
 }
 
-body .light .gradient-heading {
+.light .gradient-heading {
   background: linear-gradient(90deg, black, grey, white );
   color: var(--text-main);
 
 }
-body .light .nav-item {
+.light .nav-item {
   color: black;
 }
 
@@ -90,27 +94,47 @@ body .light .nav-item {
   color: black;
 }
 
-.light .link-btn {
 
-  background: var( --glass-bg);
-
-}
 
 .subtitle {
   color: var(--text-subtle);
-  font-size: 1.1rem;
-  margin-bottom: 12px;
-  
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  padding: 10px;
+  text-align: center;
 }
 
+
+.light .project-title {
+  color: black;
+} 
 
 /* Footer */
 footer {
   width: 100%;
+  background-color: var(--accent-1);
+  color: var(--text-black);
   max-width: 1200px;
   margin: 40px auto;
+  padding: 10px;
   text-align: center;
   z-index: 2;
   border-radius: var(--bradius);
 }
 
+.light footer p {
+  color: white;
+}
+
+
+.light .text-pressure-class span{
+  color: black !important;
+}
+
+.text-pressure-class span{
+  font-size: 8rem;
+}
+
+/* .light .text-pressure-class ::after{
+  border-color: black !important;
+} */

@@ -25,7 +25,7 @@ function ProfileCard({ contact }) {
           <a href={linkedin} target="_blank">LinkedIn</a>
         </div>
 
-        <a href={cvFile} download className="cv-btn">
+        <a href={cvFile} download className="cv-btn" aria-label="Aria label for download CV button">
           Download CV
         </a>
       </div>

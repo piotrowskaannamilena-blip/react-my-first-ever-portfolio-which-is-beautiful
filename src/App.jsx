@@ -10,6 +10,7 @@ function App() {
   const [page, setPage] = useState("home");
 
   return (
+    
     <Layout selectedPage={page} onSetPage={setPage}>
       {page === "home" && <HomePage />}
       {page === "contact" && <ContactPage />}

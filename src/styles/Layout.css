@@ -58,7 +58,7 @@ footer {
     margin: 280px auto 0; 
     padding: 20px;
 
-    background: rgba(20,20,20,0.35);
+    /* background: rgba(20,20,20,0.35); */
     border: 1px solid rgba(255,255,255,0.08);
     backdrop-filter: blur(14px);
     border-radius: 20px;
@@ -75,7 +75,7 @@ footer {
   .layout-content {
     margin-top: 500px;
     margin-right: 2px;
-    padding: 18px;
+    padding: 0px;
   }
     .page-wrapper {
     margin-left: 1px;
@@ -86,6 +86,7 @@ footer {
 @media (max-width: 1100px) {
   .layout-content {
     margin-right: 40px;  
+    padding: 0px;
 
   }
   .page-wrapper {

@@ -26,7 +26,9 @@ export default function ProjectCard({ project }) {
         <div className="project-card">
 
           <div className="project-body">
-            <h3 className="project-title">{title}</h3>
+            {/* <h3 className="project-title">{title}</h3> */}
+            <h1 className="project-title">{title}</h1>
+
             <p className="project-desc">{description}</p>
 
             <div className="project-tech">
@@ -40,9 +42,9 @@ export default function ProjectCard({ project }) {
                 );
               })}
             </div>
-            <div className="project-links">
-              {githubUrl && <a className="link-btn" target="_blank" rel="noopener noreferrer" href={githubUrl}>Code</a>}
-              {liveUrl && <a className="link-btn" target="_blank" rel="noopener noreferrer" href={liveUrl}>Live</a>}
+            <div className="project-links" id="projectLinks" aria-label="Aria Project Links Code and Live site links">
+              {githubUrl && <a className="link-btn" target="_blank" rel="noopener noreferrer" aria-label="Aria Github Link to project" href={githubUrl}>Code</a>}
+              {liveUrl && <a className="link-btn" target="_blank" rel="noopener noreferrer" aria-label="Aria Live site link to project" href={liveUrl}>Live</a>}
             </div>
           </div>
 

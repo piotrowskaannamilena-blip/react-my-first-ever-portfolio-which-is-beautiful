@@ -7,9 +7,8 @@ import TextPressure from './TextPressure';
 export default function ProjectsGrid({ projects }) {
   return (
     <section className="projects-section">
-      {/* <h2 className="gradient-heading">Projects</h2> */}
 
-    <div style={{position: 'relative', height: '300px'}}>
+    <div style={{position: 'relative', height: '200px', width: '100%', padding: '10px'}}>
           <TextPressure
             text="Projects!"
             flex={true}
@@ -20,7 +19,7 @@ export default function ProjectsGrid({ projects }) {
             italic={true}
             textColor="#ffffff"
             strokeColor="#ff0000"
-            minFontSize={20}
+            minFontSize={10}
           />
     </div>
 

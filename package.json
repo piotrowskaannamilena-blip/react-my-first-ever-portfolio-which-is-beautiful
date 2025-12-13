@@ -11,6 +11,8 @@
   "dependencies": {
     "bootstrap": "^5.3.8",
     "gsap": "^3.13.0",
+    "matter-js": "^0.20.0",
+    "motion": "^12.23.26",
     "react": "^19.2.0",
     "react-bits": "^1.0.5",
     "react-bootstrap": "^2.10.10",

@@ -1,34 +1,34 @@
-// HomePage.js
 import React from 'react';
 import { projects } from "../data/projects";
 import ProjectsGrid from "../components/ProjectsGrid";
+import LogoLoopTech from '../components/LogoLoopTech';
+import "../styles/HomePage.css"; 
+import FallingText from '../components/FallingText';
 
 const HomePage = () => {
+
   return (
     <>
+    <div className="contact-card glass">
+      <div className = "home-page">
+        <div> 
+          <h1 className="gradient-heading">Portfolio</h1>
+            <p className="subtitle">
+              Hi, I’m <span style={{fontWeight:600}}>Anna Piotrowska. </span>
+              I'm working with front-end framework <span style={{fontWeight:600}}>React.js  </span>to build this portfolio.
+            </p>
+        </div>
 
-      <div>
-        <h2 className="gradient-heading">Portfolio</h2>
-        <p className="subtitle">Hi, I’m Anna Piotrowska. I'm working with front-end framework React.js to build this portfolio.</p>
-        <p>I am Full Stack Web Developer. </p>
- 
-        <p className="subtitle">
-          Full-Stack Developer – Problem Solver 
-        </p>
-      </div>
 
       <div className="main-card glass">
-        <h1 className="gradient-heading">My projects:</h1>
-        <p>
-          A collection of my best work, spanning various technologies and domains.
-        </p>
-        
-        {/* Projects */}
-      <ProjectsGrid projects={projects} />
+        <h2 className="gradient-heading">My projects:</h2>
+        <p className="subtitle">A collection of my best work, spanning various technologies and domains.</p>
 
-
+        <ProjectsGrid projects={projects} />
+      </div>
       </div>
 
+      </div>
     </>
   );
 };

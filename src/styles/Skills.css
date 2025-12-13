@@ -25,9 +25,14 @@
 }
 
 
-.skill-card:hover {
+.dark .skill-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  box-shadow:var(--accent-1);
+}
+
+.light .skill-card:hover {
+  transform: translateY(-3px);
+  box-shadow:var(--glass-shadow);
 }
 
 /* Icon inside skill card */
@@ -37,44 +42,43 @@
   color: var(--bground-linear); 
 }
 
-/* 
-.skill-card svg { 
-  width:28px; 
-  height:28px; 
-  color:var(--accent-white); 
-} */
-
 
 /* selected icon active */
 .skill-card.active {
-  /* background: var(--accent-white); */
   border: 2px solid var(--accent-1);
   transform: scale(1.03);
 }
 
 .skill-card.active .skill-icon {
   color: var(--accent-1);
-  color: var(--text-black);
 
+}
+
+.light .skill-card.active {
+background-color: white;
 }
 
 /* Text color of icon */
 .skill-card.active span {
   color: var(--accent-1);
 }
-/* Reset button */
 
+.light .skill-card.active span {
+  color: black;
+
+}
+
+/* Reset button */
 .reset-btn {
   margin: 20px auto;
   display: block;
-  /* display: inline-block; */
   padding: 10px 18px;
   border-radius: 10px;
   cursor: pointer;
   background: var(--accent-1);
   color: black;
   font-weight: bold;
-  border: none;
+  border-radius: var(--bradius);
   transition: 0.2s ease;
 }
 
@@ -83,6 +87,10 @@
   background: white;
 }
 
+.light .reset-btn {
+  background: black;
+  color: white;
+}
 
 
 @media (max-width: 920px) { 

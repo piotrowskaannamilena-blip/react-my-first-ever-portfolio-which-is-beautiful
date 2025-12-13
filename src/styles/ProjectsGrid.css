@@ -36,6 +36,13 @@
   transform: translateY(-4px);
   box-shadow: 0 12px 28px var(--accent-1);
 }
+
+
+.light .projects-list > *:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px var(--accent-white);
+}
+
 /* Stack on mobile */
 @media (max-width: 850px) {
   .project-row {

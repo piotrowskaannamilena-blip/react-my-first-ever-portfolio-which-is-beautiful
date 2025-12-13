@@ -9,10 +9,9 @@ import {
   SiSequelize,
   SiHtml5,
   SiCss3,
-  SiGit,
+  SiGithub,
   SiJsonwebtokens,
   SiPython,
-  SiMarkdown
 } from "react-icons/si";
 
 // FontAwesome 6 
@@ -54,7 +53,7 @@ export const projects = [
     title: "Python-README.md Generator",
     description:
       "A Python CLI tool that generates professional README.md files.",
-    technologies: ["Python", "Markdown"],
+    technologies: ["Python"],
     category: "Frontend",
     image: "/images/python-readme.png",
     screen_recording: "/images/read_me_record.mp4",
@@ -66,7 +65,7 @@ export const projects = [
     id: 4,
     title: "ToDo-List",
     description: "To do list JavaScript Basic to-do list where a button changes to Complete when a task is done",
-    technologies: ["JavaScript", "HTML", "CSS", "Git"],
+    technologies: ["JavaScript", "HTML", "CSS", "GitHub"],
     category: "Frontend",
     image: "/images/todo_app.png",
     screen_recording: "/images/todo_app_record.mp4",
@@ -79,7 +78,7 @@ export const projects = [
     title: "Notes Application",
     description:
     "Full Stack Notes Application using Node and Express Note-Taking Application that allows users to: Create new notes, Read existing notes, Update notes, Delete notes",
-    technologies: ["Git", "CSS", "HTML", "JavaScript", "Node.js"],
+    technologies: ["GitHub", "CSS", "HTML", "JavaScript", "Node.js"],
     category: "Frontend",
     image: "/images/notes_app.png",
     githubUrl: "https://github.com/piotrowskaannamilena-blip/notesapplication.git",
@@ -125,11 +124,10 @@ export const techIcons = {
   "Sequelize": SiSequelize,
   "HTML": SiHtml5,
   "CSS": SiCss3,
-  "Git": SiGit,
+  "GitHub": SiGithub,
   "JWT": SiJsonwebtokens,
   "RESTful APIs": FaServer,
   "Responsive Design": MdDevices,
   "Bootstrap": SiCss3,
   "API Integration": FaServer,
-  "Markdown": SiMarkdown,
 };

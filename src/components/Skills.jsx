@@ -27,8 +27,6 @@ export default function Skills({ techs = [], selectedTech, onSelectTech }) {
               onClick={() => onSelectTech(isActive ? "" : t)}
               role="button"
 
-              // style={{cursor : "pointer"}}
-
             >
             
             {Icon && <Icon className="skill-icon" />}

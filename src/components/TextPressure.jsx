@@ -4,9 +4,9 @@ import { useEffect, useRef, useState } from 'react';
 
 const TextPressure = ({
   text = 'Compressa',
-  fontFamily = 'Compressa VF',
+  fontFamily = 'Roboto',
   // This font is just an example, you should not use it in commercial projects.
-  fontUrl = 'https://res.cloudinary.com/dr6lvwubh/raw/upload/v1529908256/CompressaPRO-GX.woff2',
+  fontUrl = 'https://fonts.gstatic.com/s/roboto/v50/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2',
 
   width = true,
   weight = true,
@@ -18,10 +18,11 @@ const TextPressure = ({
   scale = false,
 
   textColor = '#FFFFFF',
-  strokeColor = '#FF0000',
-  className = '',
+  strokeColor = '#000000ff',
+  className = 'text-pressure-class',
 
   minFontSize = 24
+  
 }) => {
   const containerRef = useRef(null);
   const titleRef = useRef(null);
@@ -127,7 +128,7 @@ const TextPressure = ({
             return Math.max(minVal, val + minVal);
           };
 
-          const wdth = width ? Math.floor(getAttr(d, 5, 200)) : 100;
+          const wdth = width ? Math.floor(getAttr(d, 5, 100)) : 100;
           const wght = weight ? Math.floor(getAttr(d, 100, 900)) : 400;
           const italVal = italic ? getAttr(d, 0, 1).toFixed(2) : 0;
           const alphaVal = alpha ? getAttr(d, 0, 1).toFixed(2) : 1;
@@ -168,6 +169,7 @@ const TextPressure = ({
           justify-content: space-between;
         }
 
+        
         .stroke span {
           position: relative;
           color: ${textColor};
@@ -194,6 +196,7 @@ const TextPressure = ({
         style={{
           fontFamily,
           textTransform: 'uppercase',
+          // fontSize: fontSize ,
           fontSize: fontSize,
           lineHeight,
           transform: `scale(1, ${scaleY})`,
@@ -203,7 +206,7 @@ const TextPressure = ({
           userSelect: 'none',
           whiteSpace: 'nowrap',
           fontWeight: 100,
-          width: '100%'
+          width: '100%',
         }}
       >
         {chars.map((char, i) => (

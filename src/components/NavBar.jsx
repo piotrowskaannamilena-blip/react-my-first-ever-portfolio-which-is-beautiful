@@ -37,15 +37,15 @@ export const NavBar = ({ selectedPage = "home", onSetPage = ()=>{} }) => {
 
         {/* Right social icons */}
         <div className="nav-right">
-          <a className="social-link" href={main.website} target="_blank" rel="noreferrer" aria-label="GitHub"><FaGithub /></a>
-          <a className="social-link" href={main.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn"><FaLinkedin /></a>
-          <a className="social-link" href={main.yt_link} target="_blank" rel="noreferrer" aria-label="YouTube"><FaYoutube /></a>
+          <a className="social-link" href={main.website} target="_blank" rel="noreferrer" aria-label="GitHub Link"><FaGithub /></a>
+          <a className="social-link" href={main.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn Link"><FaLinkedin /></a>
+          <a className="social-link" href={main.yt_link} target="_blank" rel="noreferrer" aria-label="YouTube Link"><FaYoutube /></a>
             
         {/* Right theme button */}
         <span>
     {/* Current Theme -display component reads the themeColor from the ThemeContext */}
           <Display />
-          <button className="theme-toggle-btn" onClick={toggleTheme}>
+          <button id= "themeToggleBtn" aria-label="Aria theme selector light and dark theme" className="theme-toggle-btn" onClick={toggleTheme}>
             {theme === "light" ? <FaMoon /> : <FaSun />}
           </button>
         </span>
