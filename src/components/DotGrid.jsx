@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useCallback, useMemo } from "react";
 import { gsap } from "gsap";
-import { useTheme } from "../contexts/ThemeContext";
 import "../styles/DotGrid.css";
 
 function hexToRgb(hex) {

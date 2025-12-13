@@ -99,6 +99,7 @@ background-color: white;
   } 
 
 }
-@media (max-width: 520px) {
+@media (max-width: 600px) {
   .skills-grid { grid-template-columns: 1fr; }
+  .skills-page { flex-wrap: wrap;}
 }

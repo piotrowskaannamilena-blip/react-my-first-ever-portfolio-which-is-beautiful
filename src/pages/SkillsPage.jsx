@@ -22,8 +22,8 @@ const SkillsPage = () => {
   const resetFilter = () => setSelectedTech("");
 
   return (
-    <div className="contact-card glass">
-    <div className="skills-page">
+    <div className="contact-card ">
+    <div className="skills-page glass">
 
       <Skills
         techs={allTech}

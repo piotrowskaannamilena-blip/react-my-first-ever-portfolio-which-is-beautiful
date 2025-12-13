@@ -97,7 +97,7 @@ body .light{
 
 
 .subtitle {
-  color: var(--text-subtle);
+  color: white;
   font-size: 1.4rem;
   margin-bottom: 15px;
   padding: 10px;
@@ -113,17 +113,19 @@ body .light{
 footer {
   width: 100%;
   background-color: var(--accent-1);
-  color: var(--text-black);
   max-width: 1200px;
   margin: 40px auto;
   padding: 10px;
   text-align: center;
   z-index: 2;
   border-radius: var(--bradius);
+  font-size: 1.8rem;
 }
 
+
 .light footer p {
-  color: white;
+  color: black;
+
 }
 
 

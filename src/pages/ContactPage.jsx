@@ -14,20 +14,21 @@ export default function ContactPage() {
 
     <div className="contact-card glass">
 
-      <h1 className="gradient-heading">Contact Me</h1>
+      <h1 className="gradient-heading" role="columnheader">Contact Me</h1>
       <p className="subtitle">I'd love to hear from you! (contact form will be available soon) </p>
 
       {/* Profile Card */}
-    <div className="profile-wrapper">
+    <div className="profile-wrapper" role="textbox for profile card">
         <ProfileCard contact={main} />
     </div>
 
-    <div>
+    <div className = "personal-info" role="textbox personal info section">
 
-      <h2 className="gradient-heading">About me:</h2>
+      <h2 className="gradient-heading" role="header gradient heading about me">About me:</h2>
 
 
-      <p className= "subtitle">I’m <strong>Anna</strong>, a <strong>junior developer</strong> transitioning into tech after a successful career in the telecoms/utilities sector. 
+      <p className= "subtitle" role="paragraph with Anna's experience">
+        I’m <strong>Anna</strong>, a <strong>junior developer</strong> transitioning into tech after a successful career in the telecoms/utilities sector. 
         - working in telecoms helped me develop strong communication, teamwork, leadership, and problem-solving skills. 
         - also overcome significant health challenges that reshaped my life. 
         These experiences strengthened my <strong>resilience, adaptability, and determination. </strong> 
@@ -41,7 +42,7 @@ export default function ContactPage() {
 
 
 
-    <div className="about-me-section">
+    <div className="about-me-section" role="falling text animation section ">
       <FallingText
         text={`Anna developer tech career 
         Engineering communication teamwork leadership problem-solving skills

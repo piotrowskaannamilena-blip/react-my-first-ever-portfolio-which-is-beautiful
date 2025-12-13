@@ -29,7 +29,7 @@ export default function Skills({ techs = [], selectedTech, onSelectTech }) {
 
             >
             
-            {Icon && <Icon className="skill-icon" />}
+            {Icon && <Icon className="skill-icon" aria-label= {t} />}
             <span>{t}</span>
 
             </div>
